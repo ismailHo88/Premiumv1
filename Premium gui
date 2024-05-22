@@ -1,40 +1,40 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))() --This Will Load The Script Code
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion'))() --This Will Load The Script Code
 local Player = game.Players.LocalPlayer
-  local Window = OrionLib:MakeWindow({
-		Name = "Raisen Scripts Premium System",
-		HidePremium = false,
-		SaveConfig = true,
-		ConfigFolder = "OrionTest",
-        IntroText = "Loading Script..."       
+local Window = OrionLib:MakeWindow({
+    Name = "Raisen Scripts Premium System",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "OrionTest",
+    IntroText = "Loading Script..."       
 })
 
 function MakeScriptHub()
-         loadstring(game:HttpGet('loadstring(game:HttpGet(('https://raw.githubusercontent.com/raisenscripts/Premiumv1/main/raisen%20premium%20gui')))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/raisenscripts/Premiumv1/main/raisen%20premium%20gui'))()
 end
 
 OrionLib:MakeNotification({
-	Name = "Logged In!",
-	Content = "You need key "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+    Name = "Logged In!",
+    Content = "You need key "..Player.Name..".",
+    Image = "rbxassetid://4483345998",
+    Time = 5
 }) --Notification
 
 getgenv().Key = "adz961rasn" --Put The Correct Key Here
 getgenv().KeyInput = "string" --Require For The Key To Work
 
 local Tab = Window:MakeTab({
-	Name = "Key",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Key",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 }) --Making A Tab
 
 Tab:AddTextbox({
-	Name = "Key",
-	Default = "Enter Key.",
-	TextDisappear = true,
-	Callback = function(Value)
-		getgenv().KeyInput = Value
-	end	  
+    Name = "Key",
+    Default = "Enter Key.",
+    TextDisappear = true,
+    Callback = function(Value)
+        getgenv().KeyInput = Value
+    end      
 }) --You Will Enter The Key Here
 
 Tab:AddButton({
@@ -59,7 +59,7 @@ Tab:AddButton({
             wait(.3)
             MakeScriptHub()
         else
-           OrionLib:MakeNotification({
+            OrionLib:MakeNotification({
                 Name = "Checking Key",
                 Content = "Checking The Key You Entered",
                 Image = "rbxassetid://4483345998",
@@ -77,10 +77,10 @@ Tab:AddButton({
 }) --This Will Check The Key You Entered
 
 Tab:AddButton({
-	Name = "Get Key",
-	Callback = function()
-      		setclipboard("https://discord.com/invite/AgSjR9yCke") --This Will Copy The Link Of The Key
-  	end    
+    Name = "Get Key",
+    Callback = function()
+        setclipboard("https://discord.com/invite/AgSjR9yCke") --This Will Copy The Link Of The Key
+    end    
 }) 
-    
+
 OrionLib:Init()
