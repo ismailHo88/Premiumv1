@@ -9,7 +9,7 @@ local Player = game.Players.LocalPlayer
 })
 
 function MakeScriptHub()
-         loadstring(game:HttpGet('loadstring(game:HttpGet(('https://raw.githubusercontent.com/raisenscripts/Premiumv1/main/Premium%20gui')))()
+         loadstring(game:HttpGet('loadstring(game:HttpGet(('https://raw.githubusercontent.com/raisenscripts/Premiumv1/main/raisen%20premium%20gui')))()
 end
 
 OrionLib:MakeNotification({
