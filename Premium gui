@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))() --This Will Load The Script Code
-local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
+local Player = game.Players.LocalPlayer
   local Window = OrionLib:MakeWindow({
 		Name = "Raisen Scripts Premium System",
 		HidePremium = false,
@@ -9,7 +9,7 @@ local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
 })
 
 function MakeScriptHub()
-         loadstring(game:HttpGet('https://raw.githubusercontent.com/ismailHo88/Premiumv1/main/raisen%20premium%20gui'))()
+         loadstring(game:HttpGet('loadstring(game:HttpGet(('https://raw.githubusercontent.com/ismailHo88/Premiumv1/main/Premium%20gui')))()
 end
 
 OrionLib:MakeNotification({
