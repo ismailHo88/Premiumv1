@@ -625,7 +625,7 @@ local SelectedDisableKey = getgenv().DisableKey
 --// Check if aimlock is loaded	
  
 if getgenv().Loaded == true then	
-    notify("script is already loaded!")	
+    Notify("Aimlock is already loaded!")	
     return	
 end	
  
